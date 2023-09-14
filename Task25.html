@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Slide Down Button</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    #content {
+      display: none;
+      background-color: lightblue;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <button id="slideDownButton">Slide Down</button>
+  <div id="content">
+    <p>This is some hidden content that will slide down when the button is clicked.</p>
+  </div>
+
+  <script>
+    $(document).ready(function() {
+      $("#slideDownButton").click(function() {
+        $("#content").slideDown();
+      });
+    });
+  </script>
+</body>
+</html>

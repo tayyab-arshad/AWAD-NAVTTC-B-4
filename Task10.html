@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .image-container {
+      position: relative;
+      width: 200px;
+      height: 200px;
+    }
+
+    .image-container img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: transform 0.3s;
+    }
+
+    .image-container:hover img {
+      transform: translate(50px, 50px);
+    }
+  </style>
+</head>
+<body>
+  <div class="image-container">
+    <img src="submit.png" alt="error">
+  </div>
+
+  <script>
+
+    var image = document.querySelector('.image-container img');
+
+    image.addEventListener('mouseover', function() {
+
+      image.style.transform = 'translate(50px, 50px)';
+    });
+
+
+    image.addEventListener('mouseout', function() {
+
+      image.style.transform = 'translate(0, 0)';
+    });
+  </script>
+</body>
+</html>

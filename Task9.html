@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .change-color {
+      color: orange;
+      cursor: pointer;
+    }
+  </style>
+  <script>
+    function changeFontColor() {
+      var element = document.getElementById("text");
+      var currentColor = element.style.color;
+
+    
+      if (currentColor === "orange") {
+        element.style.color = "blue";
+      } else {
+        element.style.color = "orange";
+      }
+    }
+  </script>
+</head>
+<body>
+  <p id="text" class="change-color" onclick="changeFontColor()">Click me to change font color!</p>
+</body>
+</html>

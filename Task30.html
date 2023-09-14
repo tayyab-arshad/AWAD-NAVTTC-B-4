@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Change Text Example</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <button id="changeButton">Change Text</button>
+  <p id="myParagraph">Original text</p>
+
+  <script>
+    $(document).ready(function() {
+      $("#changeButton").click(function() {
+        $("#myParagraph").text("New text");
+      });
+    });
+  </script>
+</body>
+</html>
